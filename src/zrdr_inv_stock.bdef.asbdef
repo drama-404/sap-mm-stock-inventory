@@ -1,0 +1,80 @@
+managed implementation in class ZBP_R_ADR_INV_STOCK unique;
+strict ( 2 );
+with draft;
+extensible;
+define behavior for ZRDR_INV_STOCK alias Stock
+persistent table ZADR_INV_STOCK
+extensible
+draft table ZDDR_INV_STOCK
+etag master LocalLastChangedAt
+lock master total etag LastChangedAt
+authorization master( global )
+
+{
+
+  // Allowed Standard CUD Operations
+  create;
+  update;
+
+  // Draft Operations
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  // Custom Actions
+  action createPurchaseRequisition result [1] $self;
+
+  // Field Features
+  field ( readonly )
+  MaterialId,
+  PlantId,
+  MaterialDescription,
+  MaterialType,
+  MaterialGroup,
+  PlantName,
+  Country,
+  StockStatus,
+  DaysOfStock,
+  CreatedBy,
+  CreatedAt,
+  LastGoodsReceipt,
+  LastGoodsIssue,
+  LocalLastChangedBy,
+  LocalLastChangedAt,
+  LastChangedAt;
+
+  field ( mandatory : create )
+  CurrentStock,
+  UnitOfMeasure;
+
+  // Validations
+  validation validateStock on save { create; update; }
+
+  // Determinations
+  determination calculateStockStatus on save { field CurrentStock; field ReorderPoint; }
+
+
+  mapping for zadr_inv_stock corresponding extensible
+    {
+      MaterialId         = material_id;
+      PlantId            = plant_id;
+      UnitOfMeasure      = unit_of_measure;
+      CurrentStock       = current_stock;
+      MinimumStock       = minimum_stock;
+      MaximumStock       = maximum_stock;
+      ReorderPoint       = reorder_point;
+      SafetyStock        = safety_stock;
+      LastGoodsReceipt   = last_goods_receipt;
+      LastGoodsIssue     = last_goods_issue;
+      Currency           = currency;
+      StockValue         = stock_value;
+      CreatedBy          = created_by;
+      CreatedAt          = created_at;
+      LocalLastChangedBy = local_last_changed_by;
+      LocalLastChangedAt = local_last_changed_at;
+      LastChangedAt      = last_changed_at;
+    }
+
+}
