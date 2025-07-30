@@ -1,0 +1,363 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'MaterialId'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'MaterialId'
+annotate view ZC_INV_STOCK with
+{
+  @EndUserText.label: 'MaterialId'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'MaterialId'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'MaterialId'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+  MaterialId;
+  
+  @EndUserText.label: 'PlantId'
+  @UI.identification: [ {
+    position: 20 , 
+    label: 'PlantId'
+  } ]
+  @UI.lineItem: [ {
+    position: 20 , 
+    label: 'PlantId'
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  PlantId;
+  
+  @EndUserText.label: 'StorageLocation'
+  @UI.identification: [ {
+    position: 30 , 
+    label: 'StorageLocation'
+  } ]
+  @UI.lineItem: [ {
+    position: 30 , 
+    label: 'StorageLocation'
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  StorageLocation;
+  
+  @EndUserText.label: 'CurrentStock'
+  @UI.identification: [ {
+    position: 40 , 
+    label: 'CurrentStock'
+  } ]
+  @UI.lineItem: [ {
+    position: 40 , 
+    label: 'CurrentStock'
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  CurrentStock;
+  
+  @EndUserText.label: 'MinimumStock'
+  @UI.identification: [ {
+    position: 50 , 
+    label: 'MinimumStock'
+  } ]
+  @UI.lineItem: [ {
+    position: 50 , 
+    label: 'MinimumStock'
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  MinimumStock;
+  
+  @EndUserText.label: 'MaximumStock'
+  @UI.identification: [ {
+    position: 60 , 
+    label: 'MaximumStock'
+  } ]
+  @UI.lineItem: [ {
+    position: 60 , 
+    label: 'MaximumStock'
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  MaximumStock;
+  
+  @EndUserText.label: 'ReorderPoint'
+  @UI.identification: [ {
+    position: 70 , 
+    label: 'ReorderPoint'
+  } ]
+  @UI.lineItem: [ {
+    position: 70 , 
+    label: 'ReorderPoint'
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  ReorderPoint;
+  
+  @EndUserText.label: 'SafetyStock'
+  @UI.identification: [ {
+    position: 80 , 
+    label: 'SafetyStock'
+  } ]
+  @UI.lineItem: [ {
+    position: 80 , 
+    label: 'SafetyStock'
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  SafetyStock;
+  
+  @EndUserText.label: 'UnrestrictedStock'
+  @UI.identification: [ {
+    position: 90 , 
+    label: 'UnrestrictedStock'
+  } ]
+  @UI.lineItem: [ {
+    position: 90 , 
+    label: 'UnrestrictedStock'
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  UnrestrictedStock;
+  
+  @EndUserText.label: 'QualityStock'
+  @UI.identification: [ {
+    position: 100 , 
+    label: 'QualityStock'
+  } ]
+  @UI.lineItem: [ {
+    position: 100 , 
+    label: 'QualityStock'
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  QualityStock;
+  
+  @EndUserText.label: 'BlockedStock'
+  @UI.identification: [ {
+    position: 110 , 
+    label: 'BlockedStock'
+  } ]
+  @UI.lineItem: [ {
+    position: 110 , 
+    label: 'BlockedStock'
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  BlockedStock;
+  
+  @EndUserText.label: 'ReservedStock'
+  @UI.identification: [ {
+    position: 120 , 
+    label: 'ReservedStock'
+  } ]
+  @UI.lineItem: [ {
+    position: 120 , 
+    label: 'ReservedStock'
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  ReservedStock;
+  
+  @EndUserText.label: 'InTransitStock'
+  @UI.identification: [ {
+    position: 130 , 
+    label: 'InTransitStock'
+  } ]
+  @UI.lineItem: [ {
+    position: 130 , 
+    label: 'InTransitStock'
+  } ]
+  @UI.selectionField: [ {
+    position: 130 
+  } ]
+  InTransitStock;
+  
+  @EndUserText.label: 'OpenPrQty'
+  @UI.identification: [ {
+    position: 140 , 
+    label: 'OpenPrQty'
+  } ]
+  @UI.lineItem: [ {
+    position: 140 , 
+    label: 'OpenPrQty'
+  } ]
+  @UI.selectionField: [ {
+    position: 140 
+  } ]
+  OpenPrQty;
+  
+  @EndUserText.label: 'OpenPoQty'
+  @UI.identification: [ {
+    position: 150 , 
+    label: 'OpenPoQty'
+  } ]
+  @UI.lineItem: [ {
+    position: 150 , 
+    label: 'OpenPoQty'
+  } ]
+  @UI.selectionField: [ {
+    position: 150 
+  } ]
+  OpenPoQty;
+  
+  @EndUserText.label: 'StockType'
+  @UI.identification: [ {
+    position: 160 , 
+    label: 'StockType'
+  } ]
+  @UI.lineItem: [ {
+    position: 160 , 
+    label: 'StockType'
+  } ]
+  @UI.selectionField: [ {
+    position: 160 
+  } ]
+  StockType;
+  
+  @EndUserText.label: 'LastGoodsReceipt'
+  @UI.identification: [ {
+    position: 170 , 
+    label: 'LastGoodsReceipt'
+  } ]
+  @UI.lineItem: [ {
+    position: 170 , 
+    label: 'LastGoodsReceipt'
+  } ]
+  @UI.selectionField: [ {
+    position: 170 
+  } ]
+  LastGoodsReceipt;
+  
+  @EndUserText.label: 'LastGoodsIssue'
+  @UI.identification: [ {
+    position: 180 , 
+    label: 'LastGoodsIssue'
+  } ]
+  @UI.lineItem: [ {
+    position: 180 , 
+    label: 'LastGoodsIssue'
+  } ]
+  @UI.selectionField: [ {
+    position: 180 
+  } ]
+  LastGoodsIssue;
+  
+  @EndUserText.label: 'LastMovementType'
+  @UI.identification: [ {
+    position: 190 , 
+    label: 'LastMovementType'
+  } ]
+  @UI.lineItem: [ {
+    position: 190 , 
+    label: 'LastMovementType'
+  } ]
+  @UI.selectionField: [ {
+    position: 190 
+  } ]
+  LastMovementType;
+  
+  @EndUserText.label: 'LastMovementDate'
+  @UI.identification: [ {
+    position: 200 , 
+    label: 'LastMovementDate'
+  } ]
+  @UI.lineItem: [ {
+    position: 200 , 
+    label: 'LastMovementDate'
+  } ]
+  @UI.selectionField: [ {
+    position: 200 
+  } ]
+  LastMovementDate;
+  
+  @EndUserText.label: 'StockValue'
+  @UI.identification: [ {
+    position: 210 , 
+    label: 'StockValue'
+  } ]
+  @UI.lineItem: [ {
+    position: 210 , 
+    label: 'StockValue'
+  } ]
+  @UI.selectionField: [ {
+    position: 210 
+  } ]
+  StockValue;
+  
+  @UI.identification: [ {
+    position: 220 
+  } ]
+  @UI.lineItem: [ {
+    position: 220 
+  } ]
+  @UI.selectionField: [ {
+    position: 220 
+  } ]
+  CreatedBy;
+  
+  @UI.identification: [ {
+    position: 230 
+  } ]
+  @UI.lineItem: [ {
+    position: 230 
+  } ]
+  @UI.selectionField: [ {
+    position: 230 
+  } ]
+  CreatedAt;
+  
+  @UI.identification: [ {
+    position: 240 
+  } ]
+  @UI.lineItem: [ {
+    position: 240 
+  } ]
+  @UI.selectionField: [ {
+    position: 240 
+  } ]
+  LocalLastChangedBy;
+  
+  @UI.identification: [ {
+    position: 250 
+  } ]
+  @UI.lineItem: [ {
+    position: 250 
+  } ]
+  @UI.selectionField: [ {
+    position: 250 
+  } ]
+  LocalLastChangedAt;
+  
+  @UI.identification: [ {
+    position: 260 
+  } ]
+  @UI.lineItem: [ {
+    position: 260 
+  } ]
+  @UI.selectionField: [ {
+    position: 260 
+  } ]
+  LastChangedAt;
+}

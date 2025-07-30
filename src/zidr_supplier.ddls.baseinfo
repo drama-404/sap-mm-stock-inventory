@@ -3,14 +3,10 @@
 {
 "FROM":
 [
-"ZDR_PURINFO"
+"ZDR_SUPPLIER"
 ],
 "ASSOCIATED":
-[
-"ZIDR_MATERIAL",
-"ZIDR_PLANT",
-"ZIDR_SUPPLIER"
-],
+[],
 "BASE":
 [],
 "ANNO_REF":

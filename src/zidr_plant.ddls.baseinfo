@@ -6,7 +6,9 @@
 "ZDR_PLANT"
 ],
 "ASSOCIATED":
-[],
+[
+"ZIDR_STORAGE_LOC"
+],
 "BASE":
 [],
 "ANNO_REF":

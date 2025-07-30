@@ -1,7 +1,12 @@
-@AbapCatalog.sqlViewName: 'ZIDR_STOCK_STAT'
+@AbapCatalog.viewEnhancementCategory: [#NONE]
 @AccessControl.authorizationCheck: #NOT_REQUIRED
-@EndUserText.label: 'Stock Status Description Entity'
-define view zidr_stock_status_desc as select from zdr_stock_status as Status
+@EndUserText.label: 'Stock Status Description Interface'
+@ObjectModel.usageType:{
+    serviceQuality: #X,
+    sizeCategory: #S,
+    dataClass: #MIXED
+}
+define view entity zidr_stock_status_desc as select from zdr_stock_status
 {
     @UI.textArrangement: #TEXT_ONLY
     @ObjectModel.text.element:[ 'StockStatusText' ] 

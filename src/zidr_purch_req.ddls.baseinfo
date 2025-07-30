@@ -3,7 +3,7 @@
 {
 "FROM":
 [
-"ZDR_PURINFO"
+"ZDR_PURCH_REQ"
 ],
 "ASSOCIATED":
 [
